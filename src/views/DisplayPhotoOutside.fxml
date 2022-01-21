@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+
+<BorderPane
+	xmlns="http://javafx.com/javafx/8"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="controllers.DisplayPhotoController"
+	prefHeight="1000" prefWidth="1000" style="-fx-padding: 10 5 10 5">
+	
+	 <top>
+	 <VBox >
+	 <children>
+	  <Button style="-fx-padding: 10 10 10 10"  fx:id="backTo" text="Back" onAction="#Back">
+						
+	                 </Button>
+	 	        <Text text="Caption of the Image is " />
+	 		 <TextField  prefWidth="500" fx:id="CaptionSpot" prefHeight="40" promptText="Image Caption"/>
+	 		 <TextField  prefWidth="500" fx:id="TagSpot" prefHeight="40" promptText="Image Tag"/>
+	 		 
+	 	 </children>
+	 				</VBox>	
+	 </top>
+
+   <center>
+   	 	                <Text text="Tags of the image " />
+   
+    <ImageView fx:id="image" > </ImageView>
+   
+   </center>
+	
+	<bottom>
+		
+	    <HBox>          
+	    
+	                 </HBox>   
+	</bottom>
+
+</BorderPane>

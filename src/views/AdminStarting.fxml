@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+
+<BorderPane
+	xmlns="http://javafx.com/javafx/8"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="controllers.AdminController"
+	prefHeight="1000" prefWidth="1000" style="-fx-padding: 10 5 10 5">
+	
+	 <top>
+	 <VBox spacing="15">
+	   
+		    <Text text="Press one of the three function buttons below to perform an Administrator Action. Press the Logout button to go back to the Login screen" />
+	   		
+	   		
+	   		
+	   		<HBox spacing="55">
+	   		
+		   		<Button style="-fx-padding: 10 10 10 10" BorderPane.alignment="TOP_LEFT" fx:id="ListUsersButton" text="List All Users" onAction="#onListUsersPress">
+						<BorderPane.margin>
+							<Insets bottom="0" left="0" right="0" top="10"/>
+						</BorderPane.margin>
+		        </Button>
+		        
+		        <Button style="-fx-padding: 10 10 10 10" BorderPane.alignment="TOP_LEFT" fx:id="LogoutButton" text="Logout" onAction="#onLogoutAdmin">
+						<BorderPane.margin>
+							<Insets bottom="0" left="0" right="0" top="10"/>
+						</BorderPane.margin>
+		        </Button>
+	        
+	        
+	         </HBox>
+	        
+	        <HBox spacing="55">
+	        
+	        
+		        <Button style="-fx-padding: 10 10 10 10" BorderPane.alignment="TOP_LEFT" fx:id="CreateUsersButton" text="Create a User" onAction="#onCreateUsersPress">
+						<BorderPane.margin>
+							<Insets bottom="0" left="0" right="0" top="10"/>
+						</BorderPane.margin>
+		        </Button>
+		        
+		        
+	        
+	         </HBox>
+	        
+	        <Button style="-fx-padding: 10 10 10 10" BorderPane.alignment="TOP_LEFT" fx:id="DeleteUsersButton" text="Delete a User" onAction="#onDeleteUsersPress">
+					<BorderPane.margin>
+						<Insets bottom="0" left="0" right="0" top="10"/>
+					</BorderPane.margin>
+	        </Button>
+	        
+	        
+	  
+	 </VBox>
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	 </top>
+
+	
+	
+
+</BorderPane>

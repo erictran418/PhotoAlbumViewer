@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+
+<BorderPane
+	xmlns="http://javafx.com/javafx/8"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="controllers.SearchPhotosController"
+	prefHeight="1000" prefWidth="1000" style="-fx-padding: 10 5 10 5">
+	
+	 <top>
+	 <VBox spacing="15">
+	   
+	      
+	      
+	        <Text text="Enter the Tags You Want to Search For : " />
+	      
+	        
+	         <HBox spacing="15">
+	        
+		       
+		        <VBox spacing="15">
+		        
+		        
+		          <Text text="Tag 1 Type : " />
+	                
+	              <TextField  fx:id="TagType1" prefHeight="40" promptText="Tag Type 1"/>
+	              
+	              <Text text="Tag 1 Value : " />
+	                
+	              <TextField  fx:id="TagValue1" prefHeight="40" promptText="Tag Value 1"/>
+		        
+		        
+		        </VBox>
+		        
+		        <VBox spacing="15">
+		        
+		          <Text text="Tag 2 Type : " />
+	                
+	              <TextField  fx:id="TagType2" prefHeight="40" promptText="Tag Type 2"/>
+	              
+	              <Text text="Tag 2 Value : " />
+	                
+	              <TextField  fx:id="TagValue2" prefHeight="40" promptText="Tag Value 2"/>
+		          
+		        
+		        
+		        </VBox>
+		        
+		        <VBox spacing="15">
+		        
+		        
+		          <Text text="Enter whether you want the Conjunction or Disjunction of these 1 or 2 tag-value pairs for searching (only enter one of these words in the text box) : " />
+	                
+	              <TextField  fx:id="conjordis" prefHeight="40" promptText="Conjunction or Disjunction"/>
+	              
+	              <Button style="-fx-padding: 10 10 10 10" BorderPane.alignment="TOP_LEFT" fx:id="SearchByTags" text="Search By Tags" onAction="#SearchbyTag">
+						<BorderPane.margin>
+							<Insets bottom="0" left="0" right="0" top="10"/>
+						</BorderPane.margin>
+		         </Button>
+	        
+		        
+		        
+		        </VBox>
+		        
+		        
+	        </HBox>
+	        
+	        
+	        <HBox spacing="15">
+	        
+	        
+	        
+	        
+	        
+	        
+	        
+	        <Text text="Enter the starting and ending dates if you intend to search for photos by Date Range: " />
+	        
+	        
+	        
+		       
+		    <DatePicker fx:id="fromDate" />
+		    
+		    <DatePicker fx:id="toDate" /> 
+		    
+		    </HBox>     
+		        
+		    <HBox spacing="15">  
+	        
+	        
+	        
+	        
+	       
+	        
+	        
+	        
+	         
+	        
+		       
+		    <TextField fx:id="startingtime" prefHeight="40" promptText="Lower End of Time Range"/>
+		    
+		    <TextField fx:id="endingtime" prefHeight="40" promptText="Upper End of Time Range"/>      
+		        
+		    
+	        
+	        
+	        
+	        
+	        
+	        
+	         
+	        </HBox>
+	        
+	        
+	          <Button style="-fx-padding: 10 10 10 10" BorderPane.alignment="TOP_LEFT" fx:id="SearchByDate" text="Search by Date Range" onAction="#SearchbyDate">
+						<BorderPane.margin>
+							<Insets bottom="0" left="0" right="0" top="10"/>
+						</BorderPane.margin>
+		      </Button>
+	        
+	        
+	        
+	       
+		        
+		        <Button style="-fx-padding: 10 10 10 10" BorderPane.alignment="TOP_LEFT" fx:id="BacktoUsersButton" text="Back to User Page" onAction="#backtoUserPage">
+						<BorderPane.margin>
+							<Insets bottom="0" left="0" right="0" top="10"/>
+						</BorderPane.margin>
+		        </Button>
+	        
+	         
+	      
+	        
+	        
+	        
+	       
+	        
+	        
+	        <HBox spacing="15">
+	        
+		       
+		        <Button style="-fx-padding: 10 10 10 10" BorderPane.alignment="TOP_LEFT" fx:id="LogoutButton" text="Logout" onAction="#Logout">
+						<BorderPane.margin>
+							<Insets bottom="0" left="0" right="0" top="10"/>
+						</BorderPane.margin>
+		        </Button>
+		        
+		        
+		        
+		        
+	        
+	         
+	       </HBox>
+	        
+	        
+	  
+	 </VBox>
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	 </top>
+
+	
+	
+
+</BorderPane>

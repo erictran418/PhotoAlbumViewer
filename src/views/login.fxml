@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+
+<BorderPane
+	xmlns="http://javafx.com/javafx/8"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="controllers.LoginController"
+	prefHeight="1000" prefWidth="1000" style="-fx-padding: 10 5 10 5">
+	
+	 <top>
+	 <HBox spacing="15">
+	   
+		    <Text text="Enter Username to Login" />
+	   		
+	   		<TextField  fx:id="Username" prefHeight="40" promptText="UserName"/>
+	   		
+            
+	   <Button style="-fx-padding: 10 10 10 10" BorderPane.alignment="TOP_RIGHT" fx:id="LoginButton" text="Login" onAction="#onLoginPress">
+					<BorderPane.margin>
+						<Insets bottom="0" left="0" right="0" top="10"/>
+					</BorderPane.margin>
+	   </Button>
+	  
+	  
+	 </HBox>
+	  
+	 </top>
+	 
+	 
+	  
+	  
+	
+	 
+
+	
+	
+
+</BorderPane>

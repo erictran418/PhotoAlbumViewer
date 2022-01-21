@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+
+<BorderPane
+	xmlns="http://javafx.com/javafx/8"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="controllers.OpenAlbumController"
+	prefHeight="1000" prefWidth="1000" style="-fx-padding: 10 5 10 5">
+	
+<top>
+<HBox>
+ 
+		       <Button style="-fx-padding: 10 10 10 10"  fx:id="LogoutButton" text="Logout" onAction="#Logout"> </Button> 
+		         <Button style="-fx-padding: 10 10 10 10"  fx:id="RefreshButton" text="Refresh" onAction="#Refresh"></Button>
+	         
+	        </HBox>
+</top>
+
+<center>
+<HBox spacing="15">
+	               <VBox spacing="15">
+	        
+	        
+	                <Text text="Functions: " />
+	                
+	                
+	                 <Button style="-fx-padding: 10 10 10 10" fx:id="AddPhotoButton" text="Add Photo from File" onAction="#AddPhoto">
+						
+	                 </Button>
+	                 <Button
+	                  fx:id="DeletePhotoButton" text="Delete Selected Photo" onAction="#DeletePhoto">
+							
+	                 </Button>
+	                 
+	                  <Button style="-fx-padding: 10 10 10 10" fx:id="CaptionPhotoButton" text="Add/Change Caption of Selected Photo (Specify Caption on Right)" onAction="#AddPhotoCaption">
+						
+	                 </Button>
+	                 <Button style="-fx-padding: 10 10 10 10"  fx:id="ValidTagButton" text="Update Valid Tags" onAction="#ValidTag">
+						
+	                 </Button>
+	                 
+	                  <Button style="-fx-padding: 10 10 10 10"  fx:id="AddTagButton" text="Add Tag to Selected Photo (Specify Which Tag on Right)" onAction="#AddTag">
+						
+	                 </Button>
+	                 
+	                  <Button style="-fx-padding: 10 10 10 10"  fx:id="DeleteTagButton" text="Delete Tag From Selected Photo (Specify Which Tag on Right)" onAction="#DeleteTag">
+							
+	                 </Button>
+	                 
+	                  <Button style="-fx-padding: 10 10 10 10"  fx:id="DisplayPhotoButton" text="Display Selected Photo Separately" onAction="#DisplayPhoto">
+						
+	                 </Button>
+	                 
+	                  <Button style="-fx-padding: 10 10 10 10"  fx:id="PhotoSlideshowButton" text="Display Photo SlideShow" onAction="#PhotoSlideshow">
+						
+	                 </Button>
+	                 
+	                  <Button style="-fx-padding: 10 10 10 10"  fx:id="MovePhotoButton" text="Move Selected Photo to Another Album (Name Specified on Right)" onAction="#MovePhoto">
+						
+	                 </Button>
+	        
+	        
+	        
+	        
+	               </VBox>
+	               
+	               
+	              <VBox spacing="15">
+	        
+	                <Text text="Additional Necessary Information For Functions on Left : " />
+	                
+	                
+	                
+	                <Text text="Enter the Intended New Caption of the selected photo : " />
+	                
+	                <TextField  fx:id="NewCaption" prefHeight="40" promptText="Caption to Add"/>
+	                
+	                 <Text text="*Enter the Name to update valid tag* " />
+	                
+	                <TextField  fx:id="ValidTagName" prefHeight="40" promptText="Tag to Add"/>
+	                
+	                
+	                <Text text="**Select the Name of the tag you want to add to the selected photo : " />
+	                
+	                <ChoiceBox fx:id="TagNameBox"/>
+	                
+	                  <Text text="**Enter the Value of the tag you want to add to the selected photo : " />
+	                
+	                <TextField  fx:id="NewTagValue" prefHeight="40" promptText="Tag to Add"/>
+	                
+	                
+	                
+	                
+	                <Text text="``Enter the Name of the Tag you want to Delete : " />
+	                 
+	                <ChoiceBox fx:id="TagNameBox2"/>
+	                
+	                 <Text text="``Enter the Value of the Tag you want to Delete : " />
+	                
+	                <TextField  fx:id="DeleteTagValue" prefHeight="40" promptText="Tag to Delete"/>
+	                
+	                
+	                
+	                
+	                <Text text="Enter the Name of the Album you want to Move the Selected Photo To : " />
+	                
+	                <TextField  fx:id="MoveAlbumName" prefHeight="40" promptText="New Album Name"/>
+	                
+	                
+	                
+	                
+	                
+	        
+	              </VBox>
+	        
+	        
+	         </HBox>
+</center>
+     <left>
+     
+ 
+
+     <VBox>
+     <ListView fx:id="listView">                 </ListView>
+    </VBox>
+   </left>
+
+	
+
+</BorderPane>

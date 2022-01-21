@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+
+<BorderPane
+	xmlns="http://javafx.com/javafx/8"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="controllers.PhotoSlideshowController"
+	prefHeight="1000" prefWidth="1000" style="-fx-padding: 10 5 10 5">
+	
+	
+	 <center>
+   
+    <ImageView fx:id="image" > </ImageView>
+   
+   </center>
+   <top> 
+   <VBox>
+   <children>
+   	 <Button style="-fx-padding: 10 10 10 10"  fx:id="backTo" text="Back" onAction="#Back">
+		     </Button>
+   	 <TextField  prefWidth="500" fx:id="CaptionSpot" prefHeight="40" promptText="CurrentCaption"/>
+   	 <TextField  prefWidth="500" fx:id="TagSpot" prefHeight="40" promptText="CurrentTag"/>
+   	 
+   	 </children>
+   	 </VBox>
+   
+   </top>
+	<right>
+	<VBox>
+	 <Button style="-fx-padding: 10 10 10 10"  fx:id="CycleForward" text="CycleForward" onAction="#forward"></Button>
+	 	 <Button style="-fx-padding: 10 10 10 10"  fx:id="CycleBack" text="CycleBackward" onAction="#backward"></Button>
+	 </VBox>
+	</right>
+	
+	
+
+</BorderPane>

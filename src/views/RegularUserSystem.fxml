@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+
+<BorderPane
+	xmlns="http://javafx.com/javafx/8"
+	xmlns:fx="http://javafx.com/fxml/"
+	fx:controller="controllers.UserController"
+	prefHeight="1000" prefWidth="1000" style="-fx-padding: 10 5 10 5" >
+	
+<top> 
+
+</top>
+		        
+		        
+		        
+<center>
+<VBox spacing="10">
+<Button style="-fx-padding: 10 10 10 10"  fx:id="LogoutButton" text="Logout" onAction="#Logout"> </Button> 
+
+<Text fx:id="startingtext" text="All Album Information for Placeholder: " />
+
+<ListView fx:id="listView"/>
+
+</VBox>
+</center>
+
+
+
+<right> 
+<Text text="Functions: " /> 
+
+ <VBox prefWidth="200" spacing="10">
+        	<Text text="Enter Necessary Information for Creating, Deleting, or Renaming Album : " />
+	                
+	              
+	                
+	                <Text text="Enter the New Name of the Album you want to Create or Rename the Selected Album to Only : " />
+	                
+	                <TextField  fx:id="NewAlbumName" prefHeight="40" promptText="New Album Name (Rename and Create only)"/>
+                  
+                   <Button style="-fx-padding: 10 10 10 10"  fx:id="AddAlbumButton" text="Add Album" onAction="#AlbumAdd">
+            	
+							
+	                 </Button>
+	                 
+	                  <Button style="-fx-padding: 10 10 10 10"  fx:id="DeleteAlbumButton" text="Delete Album" onAction="#DeleteAlbum">
+							
+	                 </Button>
+	                 
+	                  <Button style="-fx-padding: 10 10 10 10"  fx:id="CreateAlbumButton" text="Rename Album" onAction="#RenameAlbum">
+							
+	                 </Button>
+	                 
+	                  <Button style="-fx-padding: 10 10 10 10"  fx:id="OpenAlbumButton" text="Open Album" onAction="#OpenAlbum">
+							
+	                 </Button>
+	                 
+	                  <Button style="-fx-padding: 10 10 10 10"  fx:id="SearchPhoto" text="Search for Photo" onAction="#SearchPhoto">
+							
+	                 </Button>
+ </VBox>
+     
+
+
+</right>
+
+
+ 
+    
+	
+
+</BorderPane>

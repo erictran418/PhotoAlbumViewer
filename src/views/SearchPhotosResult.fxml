@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+
+<BorderPane
+	xmlns="http://javafx.com/javafx/8"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="controllers.SearchPhotosResultController"
+	prefHeight="1000" prefWidth="1000" style="-fx-padding: 10 5 10 5">
+	
+	 <top>
+	 <VBox spacing="15">
+	   
+	      
+	      
+	      
+	      
+	        
+	         <ListView fx:id="listView"/>
+	        
+	        
+	        
+	        
+	          <Button style="-fx-padding: 10 10 10 10" BorderPane.alignment="TOP_LEFT" fx:id="MakeAlbumButton" text="Make Album for User out of These Photos (Specify Album Name In Text Field Too)" onAction="#MakeAlbum">
+						<BorderPane.margin>
+							<Insets bottom="0" left="0" right="0" top="10"/>
+						</BorderPane.margin>
+		      </Button>
+		      
+		      
+		       <Text text="Enter the Intended Name of the New Album if making a new Album for User out of these Photos : " />
+	                
+	           <TextField  fx:id="NewAlbumName" prefHeight="40" promptText="New Name of Album made out of Photo Search Results"/>
+	        
+	        
+	        
+	        
+	        
+	        
+	        <HBox spacing="15">
+	        
+		       
+		        <Button style="-fx-padding: 10 10 10 10" BorderPane.alignment="TOP_LEFT" fx:id="LogoutButton" text="Logout" onAction="#Logout">
+						<BorderPane.margin>
+							<Insets bottom="0" left="0" right="0" top="10"/>
+						</BorderPane.margin>
+		        </Button>
+		        
+		        
+		        
+		        <Button style="-fx-padding: 10 10 10 10" BorderPane.alignment="TOP_LEFT" fx:id="BacktoSearch" text="Back to Search Photos Page" onAction="#backtoSearch">
+						<BorderPane.margin>
+							<Insets bottom="0" left="0" right="0" top="10"/>
+						</BorderPane.margin>
+		        </Button>
+		        
+		        
+		        
+		        
+		        
+	        
+	         
+	       </HBox>
+	        
+	        
+	  
+	 </VBox>
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	 </top>
+
+	
+	
+
+</BorderPane>
